@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Devansh Sharma - Course Overview</title>
+    <style>
+        /* 1. GLOBAL RESET & FONTS */
+        body {
+            background-color: lightcyan;
+            margin: 0;
+            font-family: Arial, sans-serif; /* Cleaner font */
+        }
+
+        /* 2. SHARED STYLES (Efficiency: Define blue box once, use twice) */
+        .blue-box {
+            background-color: rgb(0, 128, 255);
+            color: azure;
+            text-align: center;
+            padding: 15px;
+        }
+
+        /* 3. SECTION STYLES */
+        h2.title-bar {
+            color: lightgoldenrodyellow;
+            background-color: darkblue;
+            padding: 10px;
+            margin-top: 0;
+        }
+
+        /* 4. LIST & TEXT STYLES */
+        ul {
+            color: darkblue;
+            line-height: 1.6;
+        }
+        
+        /* Targets any link inside the content */
+        a {
+            text-decoration: none;
+            color: darkblue;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .crimson-text {
+            color: crimson;
+            padding: 0 20px; /* Adds side padding for readability */
+        }
+        
+        .contact-link {
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="blue-box">
+        <h1>Devansh Sharma</h1>
+        <h2>24BCE0717</h2>
+        <h3>VIT Vellore</h3>
+    </header>
+
+    <main>
+        <h2 class="title-bar">Course Overview</h2>
+
+        <ul>
+            <li><strong>Lab + Theory</strong>
+                <ol>
+                    <li>BCSE204L - Design and Analysis of Algorithms</li>
+                    <li>BECE204L - Microprocessors and Microcontrollers</li>
+                    <li>BMAT202L - Probability and Statistics</li>
+                </ol>
+            </li>
+            
+            <li><strong>Embedded Lab + Theory</strong>
+                <ol>
+                    <li>
+                        <u>Web Programming BCSE203E under <em>Prof. <a href="https://github.com/iamjayakumars" target="_blank">Jaykumar S</a></em></u>
+                    </li>
+                </ol>
+            </li>
+
+            <li><strong>Theory Only</strong>
+                <ol>
+                    <li>BCSE205L - Computer Architecture and Organization</li>
+                    <li>BCSE304L - Theory of Computation</li>
+                    <li>BSTS102P - Quantitative Skills Practice II</li>
+                </ol>
+            </li>
+        </ul>
+
+        <p class="crimson-text">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius itaque neque eligendi, aut amet necessitatibus esse laboriosam impedit expedita aperiam repudiandae. Velit et explicabo id excepturi quo quas eos harum repellat distinctio earum. Nostrum corrupti, optio incidunt assumenda quis corporis dolores ut reprehenderit ipsa, repellendus fugit veritatis laudantium delectus iure ducimus, atque natus necessitatibus porro deleniti illo commodi sunt doloribus.
+        </p>
+
+        <h5 class="contact-link"><a href="https://www.linkedin.com/in/devxnshsharma/" target="_blank">Contact Me</a></h5>
+    </main>
+
+    <footer class="blue-box">
+        <h6>Copyright © 2025 Devansh Sharma, VIT, Vellore-632 014.</h6>
+    </footer>
+
+</body>
+</html>
