@@ -1,0 +1,68 @@
+body {
+    background-color: #e0f7fa; /* Lightcyan-like */
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    background-color: #0080ff;
+    color: azure;
+    padding: 10px;
+    text-align: center;
+}
+
+.section-title {
+    color: #fffde7; /* Light Goldenrod Yellow */
+    background-color: #00008b; /* Dark Blue */
+    padding: 10px;
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    padding-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    font-size: 0.85rem;
+}
+
+th {
+    background-color: #0080ff;
+    color: white;
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Status color to match screenshot */
+.status {
+    color: #2e7d32;
+    font-weight: bold;
+}
+
+tfoot td {
+    background-color: #0080ff;
+    color: white;
+    font-weight: bold;
+    padding: 15px;
+}
+
+footer {
+    background-color: #0080ff;
+    color: azure;
+    text-align: center;
+    padding: 5px;
+    position: relative;
+    width: 100%;
+}
