@@ -1,0 +1,362 @@
+/* 1. RESET & VARIABLES */
+:root {
+    --bg-color: #1a1a1a;
+    --card-bg: #252525;
+    --text-main: #f0f0f0;
+    --text-muted: #a0a0a0;
+    --accent: #64ffda;  /* The teal accent color */
+    --border: #333333;
+    --font-serif: "Lora", "Georgia", serif;
+    --font-sans: "Inter", "Helvetica Neue", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    font-family: var(--font-sans);
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* 2. LAYOUT CONTAINER - WIDENED */
+.container {
+    max-width: 1200px; /* Increased from 800px to 1200px */
+    width: 92%;        /* Adds side padding on smaller screens */
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+/* 3. HEADER & NAV */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 80px;
+    padding: 20px 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.logo {
+    font-family: var(--font-serif);
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+}
+
+nav a {
+    color: var(--text-muted);
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+nav a:hover, nav a.cta-btn {
+    color: var(--accent);
+}
+
+/* 4. PROFILE SECTION (SIDE BY SIDE) */
+.profile-section {
+    margin-bottom: 100px;
+}
+
+.profile-content {
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.profile-text {
+    flex: 1; /* Takes up available space */
+}
+
+.profile-image-wrapper {
+    flex-shrink: 0;
+}
+
+.profile-pic {
+    width: 280px;
+    height: 280px;
+    border-radius: 12px; /* Slight rounded corners instead of circle for modern look */
+    border: 1px solid var(--border);
+    object-fit: cover;
+    box-shadow: 20px 20px 0px rgba(100, 255, 218, 0.05); /* Subtle shadow effect */
+}
+
+.profile-text h1 {
+    font-family: var(--font-serif);
+    font-size: 3.5rem; /* Larger Headline */
+    font-weight: 400;
+    line-height: 1.1;
+    margin-bottom: 10px;
+    color: var(--text-main);
+}
+
+.subtitle {
+    color: var(--accent);
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    font-family: monospace;
+}
+
+.bio {
+    font-size: 1.1rem;
+    color: #ccc;
+    max-width: 600px; /* Limits line length for readability */
+    margin-bottom: 30px;
+}
+
+.bio p {
+    margin-bottom: 20px;
+}
+
+.social-links a {
+    color: var(--text-muted);
+    font-size: 1.5rem;
+    margin-right: 20px;
+    transition: all 0.2s;
+}
+
+.social-links a:hover {
+    color: var(--accent);
+    transform: translateY(-3px);
+}
+
+/* 5. SECTIONS GENERAL */
+.section {
+    margin-bottom: 100px;
+}
+
+h2 {
+    font-family: var(--font-serif);
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: var(--text-main);
+    display: flex;
+    align-items: center;
+}
+
+h2::after {
+    content: "";
+    display: block;
+    width: 200px;
+    height: 1px;
+    background: var(--border);
+    margin-left: 20px;
+}
+
+h3 {
+    font-family: var(--font-sans);
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-main);
+}
+
+/* 6. SKILLS (TAGS) */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 Columns for wider look */
+    gap: 40px;
+}
+
+.skill-category h3 {
+    margin-bottom: 20px;
+    color: var(--accent);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.tags span {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 0.95rem;
+    color: var(--text-main);
+    transition: background 0.2s;
+}
+
+.tags span:hover {
+    background: rgba(100, 255, 218, 0.1);
+    color: var(--accent);
+}
+
+/* 7. PROJECTS GRID */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); /* Responsive Grid */
+    gap: 30px;
+}
+
+.project-card {
+    background: var(--card-bg);
+    padding: 30px;
+    border-radius: 8px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px -15px rgba(0,0,0,0.5);
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.project-header h3 {
+    font-size: 1.25rem;
+    color: var(--text-main);
+}
+
+.project-link {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+}
+
+.project-link:hover {
+    color: var(--accent);
+}
+
+.tech-stack {
+    color: var(--accent);
+    font-size: 0.85rem;
+    font-family: monospace;
+    margin-bottom: 20px;
+}
+
+/* 8. EXPERIENCE TABLE */
+.experience-wrapper {
+    max-width: 900px; /* Keep table slightly narrower for readability */
+}
+
+.experience-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.experience-table td {
+    padding: 25px 0;
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+}
+
+.year {
+    width: 180px;
+    color: var(--text-muted);
+    font-family: monospace;
+    font-size: 0.95rem;
+}
+
+.role strong {
+    font-size: 1.15rem;
+    color: var(--text-main);
+}
+
+.org {
+    color: var(--accent);
+    font-size: 0.95rem;
+}
+
+.details {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #ccc;
+    max-width: 600px;
+}
+
+/* 9. FOOTER & BACK TO TOP */
+footer {
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    margin-top: 50px;
+    padding-top: 30px;
+    border-top: 1px solid var(--border);
+}
+
+/* Back to Top Button Styling */
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--card-bg);
+    color: var(--accent);
+    border: 1px solid var(--border);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.back-to-top:hover {
+    background-color: var(--accent);
+    color: var(--bg-color);
+    transform: translateY(-3px);
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 850px) {
+    .profile-content {
+        flex-direction: column-reverse; /* Text below image on mobile */
+        text-align: left;
+        gap: 30px;
+    }
+    
+    .profile-pic {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .experience-table td {
+        display: block;
+        width: 100%;
+        padding: 5px 0;
+        border: none;
+    }
+    
+    .year {
+        margin-bottom: 5px;
+        color: var(--accent);
+    }
+    
+    .role {
+        margin-bottom: 30px;
+        border-bottom: 1px solid var(--border);
+        padding-bottom: 25px;
+    }
+}

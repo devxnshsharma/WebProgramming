@@ -1,0 +1,109 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0f7fa; /* Light cyan */
+    margin: 0;
+    color: #333;
+}
+
+header {
+    background-color: #0080ff;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.section-title {
+    background-color: #00008b; /* Dark blue */
+    color: #fffde7;
+    padding: 10px;
+    margin: 0;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+
+.container {
+    width: 100%;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+.scrollable {
+    overflow-x: auto; /* Makes it fluid on mobile */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 800px; /* Ensures table doesn't squash too much */
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+    font-size: 0.85rem;
+}
+
+/* Weekly Grid Specifics */
+.grid-table thead th {
+    background-color: #0080ff;
+    color: white;
+}
+
+.day-label, .type-label {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.lunch-cell {
+    background-color: #eee;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    letter-spacing: 4px;
+    font-weight: bold;
+}
+
+.booked {
+    background-color: #ff768e; /* Pink highlight */
+    color: white;
+    font-weight: bold;
+}
+
+/* Course Details Specifics */
+.details-table thead th {
+    background-color: #0080ff;
+    color: white;
+}
+
+.status {
+    color: #2e7d32;
+    font-weight: bold;
+}
+
+tfoot td {
+    background-color: #0080ff;
+    color: white;
+    font-weight: bold;
+}
+.lunch-head-empty { background-color: #0080ff; width: 30px; }
+.lunch-bar {
+    background-color: #0080ff;
+    text-orientation: upright;
+    letter-spacing: 5px;
+    font-weight: bold;
+    color: white;
+    width: 30px;
+    vertical-align: middle;
+}
+.day-label { background-color: #f2f2f2; font-weight: bold; color: #005bb7; width: 50px; }
+.type-label { background-color: #fafafa; font-size: 0.6rem; font-weight: bold; width: 60px; }
+.booked { background-color: crimson; color: white; font-weight: bold; border: 1px solid #e0526b; line-height: 1.2; }
+.status { color: #2e7d32; font-weight: bold; }
+footer {
+    background-color: #0080ff;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    margin-top: 20px;
+}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VTOP Integrated Timetable</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+    <header>
+        <h1>VTOP</h1>
+        <h3>VIT Vellore</h3>
+    </header>
+
+    <h2 class="section-title">Course Details</h2>
+    <div class="container scrollable">
+        <table class="details-table">
+            <thead>
+                <tr>
+                    <th>Sl.No</th>
+                    <th>Course Code & Title</th>
+                    <th>L T P J C</th>
+                    <th>Category</th>
+                    <th>Slot / Venue</th>
+                    <th>Faculty Details</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>1</td><td>BCSE203E - Web Programming</td><td>1 0 0 0 1.0</td><td>Discipline Core</td><td>TAA1 - PRP209</td><td>JAYAKUMAR S - SCOPE</td><td class="status">Registered and Approved</td></tr>
+                <tr><td>2</td><td>BCSE203E - Web Programming Lab</td><td>0 0 4 0 2.0</td><td>Discipline Core</td><td>L43+L44+L57+L58 - PRP231</td><td>JAYAKUMAR S - SCOPE</td><td class="status">Registered and Approved</td></tr>
+                <tr><td>3</td><td>BCSE204L - Design & Analysis of Algorithms</td><td>3 0 0 0 3.0</td><td>Discipline Core</td><td>F1+TF1 - PRP308</td><td>PADMAVATHY T - SCOPE</td><td class="status">Registered and Approved</td></tr>
+                <tr><td>4</td><td>BCSE204P - Algorithms Lab</td><td>0 0 2 0 1.0</td><td>Discipline Core</td><td>L47+L48 - PRP233</td><td>PADMAVATHY T - SCOPE</td><td class="status">Registered and Approved</td></tr>
+                <tr><td>5</td><td>BCSE205L - Computer Architecture & Org</td><td>3 0 0 0 3.0</td><td>Discipline Core</td><td>A1+TA1 - PRP220</td><td>RUBY D - SCOPE</td><td class="status">Registered and Approved</td></tr>
+                <tr><td>6</td><td>BCSE304L - Theory of Computation</td><td>3 0 0 0 3.0</td><td>Discipline Core</td><td>E1+TE1 - PRP308</td><td>SAMRIDDHI S - SCOPE</td><td class="status">Registered and Approved</td></tr>
+                <tr><td>7</td><td>BECE204L - Microprocessors & Controllers</td><td>3 0 0 0 3.0</td><td>Discipline Linked Engineering Science</td><td>C1+TC1 - PRP223</td><td>SHANIDUL H - SENSE</td><td class="status">Registered and Approved</td></tr>
+                <tr><td>8</td><td>BECE204P - Microprocessors Lab</td><td>0 0 2 0 1.0</td><td>Discipline Linked Engineering Science</td><td>L49+L50 - PRP136</td><td>SHANIDUL H - SENSE</td><td class="status">Registered and Approved</td></tr>
+                <tr><td>9</td><td>BMAT202L - Probability & Statistics</td><td>3 0 0 0 3.0</td><td>Foundation Core</td><td>B1+TB1 - PRP306</td><td>ANIMESH ROY - SAS</td><td class="status">Registered and Approved</td></tr>
+                <tr><td>10</td><td>BMAT202P - Probability & Statistics Lab</td><td>0 0 2 0 1.0</td><td>Foundation Core</td><td>L39+L40 - PRP450</td><td>ANIMESH ROY - SAS</td><td class="status">Registered and Approved</td></tr>
+                <tr><td>11</td><td>BSSC101N - Essence of Trad. Knowledge</td><td>0 0 0 0 2.0</td><td>Non-graded Core</td><td>NIL - NIL</td><td>RASHMI M - SSL</td><td class="status">Registered and Approved</td></tr>
+                <tr><td>12</td><td>BSTS102P - Quantitative Skills II</td><td>0 0 3 0 1.5</td><td>Foundation Core</td><td>D1+TD1 - PRP209</td><td>FACE (APT) - SSL</td><td class="status">Registered and Approved</td></tr>
+            </tbody>
+            <tfoot>
+                <tr><td colspan="7">Total Number Of Credits: 24.5</td></tr>
+            </tfoot>
+        </table>
+    </div>
+
+    <h2 class="section-title">Class Schedule</h2>
+    <div class="container scrollable">
+        <table class="grid-table" style="background-color: palegreen; margin-bottom: auto;">
+            <thead>
+                <tr>
+                    <th rowspan="2" colspan="2">THEORY / LAB</th>
+                    <th>08:00</th><th>09:00</th><th>10:00</th><th>11:00</th><th>12:00</th><th>-</th>
+                    <th rowspan="2" class="lunch-head-empty">Break</th> 
+                    <th>14:00</th><th>15:00</th><th>16:00</th><th>17:00</th><th>18:00</th>
+                </tr>
+                <tr>
+                    <th>08:50</th><th>09:50</th><th>10:50</th><th>11:50</th><th>12:50</th><th>13:20</th>
+                    <th>14:50</th><th>15:50</th><th>16:50</th><th>17:50</th><th>18:50</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2" class="day-label">MON</td>
+                    <td class="type-label">THEORY</td>
+                    <td class="booked">A1<br>BCSE205L</td><td class="booked">F1<br>BCSE204L</td><td class="booked">D1<br>BSTS102P</td><td class="booked">TB1<br>BMAT202L</td><td>TG1</td><td>-</td>
+                    <td rowspan="10" class="lunch-bar">LUNCH</td>
+                    <td>A2</td><td>F2</td><td>D2</td><td>TB2</td><td>TG2</td>
+                </tr>
+                <tr>
+                    <td class="type-label">LAB</td>
+                    <td>L1</td><td>L2</td><td>L3</td><td>L4</td><td>L5</td><td>L6</td>
+                    <td>L31</td><td>L32</td><td>L33</td><td>L34</td><td>L35</td>
+                </tr>
+
+                <tr>
+                    <td rowspan="2" class="day-label">TUE</td>
+                    <td class="type-label">THEORY</td>
+                    <td class="booked">B1<br>BMAT202L</td><td>G1</td><td class="booked">E1<br>BCSE304L</td><td class="booked">TC1<br>BECE204L</td><td class="booked">TAA1<br>BCSE203E</td><td>-</td>
+                    <td>B2</td><td>G2</td><td>E2</td><td>TC2</td><td>TAA2</td>
+                </tr>
+                <tr>
+                    <td class="type-label">LAB</td>
+                    <td>L7</td><td>L8</td><td>L9</td><td>L10</td><td>L11</td><td>L12</td>
+                    <td>L37</td><td>L38</td><td class="booked">L39<br>BMAT202P</td><td class="booked">L40<br>BMAT202P</td><td>L41</td>
+                </tr>
+
+                <tr>
+                    <td rowspan="2" class="day-label">WED</td>
+                    <td class="type-label">THEORY</td>
+                    <td class="booked">C1<br>BECE204L</td><td class="booked">A1<br>BCSE205L</td><td class="booked">F1<br>BCSE204L</td><td>V1</td><td>V2</td><td>-</td>
+                    <td>C2</td><td>A2</td><td>F2</td><td>TD2</td><td>TBB2</td>
+                </tr>
+                <tr>
+                    <td class="type-label">LAB</td>
+                    <td>L13</td><td>L14</td><td>L15</td><td>L16</td><td>L17</td><td>L18</td>
+                    <td class="booked">L43<br>BCSE203E</td><td class="booked">L44<br>BCSE203E</td><td>L45</td><td>L46</td><td class="booked">L47<br>BCSE204P</td>
+                </tr>
+
+                <tr>
+                    <td rowspan="2" class="day-label">THU</td>
+                    <td class="type-label">THEORY</td>
+                    <td class="booked">D1<br>BSTS102P</td><td class="booked">B1<br>BMAT202L</td><td>G1</td><td class="booked">TE1<br>BCSE304L</td><td>TCC1</td><td>-</td>
+                    <td>D2</td><td>B2</td><td>G2</td><td>TE2</td><td>TCC2</td>
+                </tr>
+                <tr>
+                    <td class="type-label">LAB</td>
+                    <td>L19</td><td>L20</td><td>L21</td><td>L22</td><td>L23</td><td>L24</td>
+                    <td class="booked">L49<br>BECE204P</td><td class="booked">L50<br>BECE204P</td><td>L51</td><td>L52</td><td>L53</td>
+                </tr>
+
+                <tr>
+                    <td rowspan="2" class="day-label">FRI</td>
+                    <td class="type-label">THEORY</td>
+                    <td class="booked">E1<br>BCSE304L</td><td class="booked">C1<br>BECE204L</td><td class="booked">TA1<br>BCSE205L</td><td class="booked">TF1<br>BCSE204L</td><td class="booked">TD1<br>BSTS102P</td><td>-</td>
+                    <td>E2</td><td>C2</td><td>TA2</td><td>TF2</td><td>TDD2</td>
+                </tr>
+                <tr>
+                    <td class="type-label">LAB</td>
+                    <td>L25</td><td>L26</td><td>L27</td><td>L28</td><td>L29</td><td>L30</td>
+                    <td>L55</td><td>L56</td><td class="booked">L57<br>BCSE203E</td><td class="booked">L58<br>BCSE203E</td><td>L59</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <footer style="margin-top: 0; padding: auto;">
+        <h6>Copyright &copy; 2025 Devansh Sharma, VIT, Vellore-632 014.</h6>
+    </footer>
+
+</body>
+</html>
